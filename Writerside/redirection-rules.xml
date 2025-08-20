@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="1495e2e2">
+        <description>Created after removal of "How to" from Help Instance</description>
+        <accepts>How-to_2.html</accepts>
+    </rule>
+    <rule id="7d00bd5a">
+        <description>Created after removal of "Share a project on GitHub from IntelliJ IDEA" from Help Instance
+        </description>
+        <accepts>How-to.html</accepts>
+    </rule>
+</rules>

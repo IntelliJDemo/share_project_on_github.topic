@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Share a project on GitHub from IntelliJ IDEA" id="share_project_on_github">
+
+    <p>
+        In IntelliJ IDEA, you can share a local project on GitHub by linking your GitHub account, creating a remote repository, and publishing the project files.
+    </p>
+
+    <chapter title="Before you start" id="before">
+        <p>Check the prerequisites before sharing your project:</p>
+
+        <list>
+            <li>You have a GitHub account.</li>
+            <li>Your local project is under Git version control.</li>
+            <li>You have Git installed and configured in IntelliJ IDEA.</li>
+        </list>
+    </chapter>
+
+    <chapter title="Link your GitHub account" id="link-account">
+        <procedure title="Add your GitHub account" id="link-github">
+            <step>
+                <p>From the top menu bar, select <control>IntelliJ IDEA | Settings</control> (or press <control>⌘,</control> on macOS).</p>
+            </step>
+
+            <img src="./intellij-idea-menu.png" alt="IntelliJ IDEA top menu" width="400"/>
+            <step>
+                <p>In the <control>Settings</control> dialog, expand <control>Version Control</control> and select <control>GitHub</control>.</p>
+            </step>
+
+            <step>
+                <p>On the right side, click <control>Add account</control> (or press <control>⌘N</control>), then select <control>Log in via GitHub</control>.</p>
+            </step>
+            <img src="./add-github-account.png" alt="Add GitHub account in IntelliJ IDEA settings" width="400"/>
+
+            <step>
+                <p>A browser window opens. Click <control>Authorize on GitHub</control>, then <control>Authorize JetBrains</control> on the GitHub page.</p>
+                <img src="./authorize-on-github.png" alt="Authorize on GitHub page" width="400"/>
+                <p>If prompted, enter your GitHub password and click <control>Confirm</control>.</p>
+            </step>
+
+            <step>
+                <p>After successful authorization, a confirmation page appears. Close the page and return to IntelliJ IDEA.</p>
+            </step>
+
+            <step>
+                <p>Back in IntelliJ IDEA, verify that your GitHub account is now registered in the <control>GitHub</control> settings.</p>
+            </step>
+            <img src="./added-github-account.png" alt="GitHub account added in IntelliJ" width="400"/>
+        </procedure>
+    </chapter>
+
+    <chapter title="Share a project on GitHub" id="share-project">
+        <procedure title="Publish a project" id="publish-steps">
+            <step>
+                <p>Open the project you want to share in IntelliJ IDEA.</p>
+            </step>
+
+            <step>
+                <p>From the top menu, select <control>VCS | Share Project on GitHub</control>.</p>
+            </step>
+            <img src="./vcs.png" alt="VCS menu in IntelliJ IDEA" width="400"/>
+
+            <step>
+                <p>In the <control>Share Project on GitHub</control> dialog, specify:</p>
+                <list>
+                    <li>The repository name (defaults to the project name).</li>
+                    <li>An optional description for your project.</li>
+                    <li>Whether the repository should be <control>Private</control> or public.</li>
+                    <li>Your GitHub account in the <control>Share by</control> dropdown.</li>
+                </list>
+            </step>
+            <img src="./share-project-on-github.png" alt="Share Project on GitHub dialog in IntelliJ IDEA" width="400"/>
+
+
+            <step>
+                <p>Click <control>Share</control>. Select the files to include in the initial commit, review the default commit message, and click <control>Add</control>.</p>
+            </step>
+
+            <step>
+                <p>Once the process completes, IntelliJ IDEA displays a balloon notification with a link to the new GitHub repository.</p>
+            </step>
+
+            <step>
+                <p>Click the link to open the repository in a browser and verify that the project, commit message, and description appear as expected.</p>
+            </step>
+            <img src="./github-repository.png" alt="GitHub repository view in browser" width="400"/>
+        </procedure>
+    </chapter>
+
+    <note>
+        <p>Sharing a project creates a new repository and pushes your code for the first time. After that, use <control>Git | Push</control> to update it with new commits.</p>
+    </note>
+</topic>
